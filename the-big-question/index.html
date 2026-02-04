@@ -3,35 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Be My Valentine?</title>
-
+  <title>The Big Question ❤️</title>
   <style>
     body {
-      margin: 0;
-      background: #ffccd5;
-      font-family: Arial;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      font-family: 'Georgia', serif;
+      background: #fff0f5;
       text-align: center;
+      padding: 20px;
     }
 
-    .card {
-      width: 90%;
-      max-width: 350px;
+    h1 {
+      color: #d6336c;
     }
 
     button {
-      width: 100%;
-      padding: 16px;
-      font-size: 18px;
-      border-radius: 30px;
-      border: none;
-      background: red;
+      background: #ff69b4;
       color: white;
-      margin-top: 15px;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.1s;
     }
 
     button:active {
@@ -39,11 +32,11 @@
     }
   </style>
 </head>
-
 <body>
-  <div class="card">
-    <h2>❤️ Will you be my Valentine? ❤️</h2>
-    <button>Yes 💕</button>
-  </div>
+
+  <h1>Will you be my Valentine? ❤️</h1>
+
+  <button onclick="alert('Yay! 💖')">Click Me!</button>
+
 </body>
 </html>
