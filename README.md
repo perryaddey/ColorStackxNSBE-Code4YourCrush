@@ -1,4 +1,4 @@
-# 💖 ColorStack x NSBE: Code 4 Your Crush 💖
+# 💖 Lehigh ColorStack x NSBE: Code 4 Your Crush 💖
 
 Welcome to **Code 4 Your Crush**, a fun event where you can code your own Valentine’s Day card in HTML!  
 Choose a template, customize it with your own message or image, and share it with a friend or crush.
