@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .letter {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            width: 600px;
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            color: #e91e63;
+            font-size: 2em;
+            margin-bottom: 20px;
+            animation: slideIn 1.5s ease-out 0.5s both;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            animation: fadeInUp 2s ease-out 1s both;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .photos {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .photos img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #e91e63;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            animation: zoomIn 1s ease-out 2s both;
+        }
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .photos img:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+        .love-message {
+            font-size: 2.5em;
+            color: #e91e63;
+            font-weight: bold;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .love-message span {
+            opacity: 0;
+            animation: loveReveal 2s ease-out forwards;
+        }
+        .love-message span:nth-child(1) { animation-delay: 3s; }
+        .love-message span:nth-child(2) { animation-delay: 3.5s; }
+        .love-message span:nth-child(3) { animation-delay: 4s; }
+        .love-message span:nth-child(4) { animation-delay: 4.5s; }
+        .love-message span:nth-child(5) { animation-delay: 5s; }
+        .love-message span:nth-child(6) { animation-delay: 5.5s; }
+        .love-message span:nth-child(7) { animation-delay: 6s; }
+        .love-message span:nth-child(8) { animation-delay: 6.5s; }
+        @keyframes loveReveal {
+            from { opacity: 0; transform: scale(0.5); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .signature {
+            margin-top: 30px;
+            font-style: italic;
+            animation: fadeIn 2s ease-out 7s both;
+        }
+        @media (max-width: 600px) {
+            .letter {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+            .photos img {
+                width: 80px;
+                height: 80px;
+            }
+            .love-message {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="letter">
+        <h1>Happy Valentine's Day!</h1>
+        <p>Here's to our special bond and all the memories we've made together.</p>
+        <div class="photos">
+            <!-- Replace src with your actual photo URLs -->
+            <img src="path/to/your/first/photo.jpg" alt="Memory 1">
+            <img src="path/to/your/second/photo.jpg" alt="Memory 2">
+            <img src="path/to/your/third/photo.jpg" alt="Memory 3">
+        </div>
+        <div class="love-message">
+            <span>I</span>
+            <span>l</span>
+            <span>o</span>
+            <span>v</span>
+            <span>e</span>
+            <span>y</span>
+            <span>o</span>
+            <span>u</span>
+        </div>
+        <p class="signature">With all my heart,<br>Your Valentine</p>
+    </div>
+</body>
+</html>
