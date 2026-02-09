@@ -17,6 +17,32 @@
       align-items: center;
     }
 
+    .envelope {
+      width: 90%;
+      max-width: 350px;
+      background: white;
+      padding: 40px 20px;
+      border-radius: 20px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .envelope:hover {
+      transform: scale(1.05);
+    }
+
+    .envelope-content {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .envelope h3 {
+      color: #d6336c;
+      font-size: 1.2rem;
+    }
+
     .card {
       width: 90%;
       max-width: 350px;
@@ -25,6 +51,11 @@
       border-radius: 20px;
       text-align: center;
       animation: float 2s infinite alternate;
+      display: none;
+    }
+
+    .card.show {
+      display: block;
     }
 
     img {
@@ -37,16 +68,32 @@
       from { transform: translateY(0); }
       to { transform: translateY(-8px); }
     }
+
+    .hidden {
+      display: none;
+    }
   </style>
 </head>
 
 <body>
-  <div class="card">
-    <h2>💖 Happy Valentine’s Day 💖</h2>
-    <p>You’re an awesome friend!</p>
+  <div class="envelope" id="envelope" onclick="openLetter()">
+    <div class="envelope-content">💌</div>
+    <h3>Tap to open your letter!</h3>
+  </div>
+
+  <div class="card" id="card">
+    <h2>💖 Happy Valentine's Day 💖</h2>
+    <p>You're an awesome friend!</p>
 
     <!-- Put photo.jpg in the same folder -->
     <img src="images/images1.jpeg" alt="Friend photo">
   </div>
+
+  <script>
+    function openLetter() {
+      document.getElementById('envelope').classList.add('hidden');
+      document.getElementById('card').classList.add('show');
+    }
+  </script>
 </body>
 </html>
